@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae</title>
+  <meta name="description" content="Curriculum de Jeremy Bennett.">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta property="og:title" content="Curriculum Vitae">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://alanruzich.github.io/curriculum-vitae/">
+  <meta property="og:image" content="https://alanruzich.github.io/curriculum-vitae/persona.jpg">
+  <meta property="og:description" content="Curriculum de Jeremy Bennett">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+  <div class="container-fluid text-center">
+    <div class="row">
+      <div class="col-3 py-2 fondoFoto">
+        <button type="button" class="btn btn-primary botonFoto" data-bs-toggle="modal" data-bs-target="#modalFotoCarnet">
+          <img class="fotoCarnet" src="persona.jpg" alt="Foto Carnet">
+        </button>
+      </div>
+      <div class="modal fade" id="modalFotoCarnet" tabindex="-1" aria-labelledby="modalFotoCarnetLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content modalContentFotoCarnet">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modalFotoCarnetLabel">Foto Carnet</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img class="fotoCarnetModal" src="persona.jpg" alt="Foto Carnet">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col barra_superior">
+        <h1 class="text-start nombre">Jeremy Bennett</h1>
+      </div>
+      <div class="col barra_superior">
+        <h2 class="text-end profesion">Programador web</h2>
+      </div>
+    </div>  
+    <div class="row">
+      <div class="col-lg-3 px-2 barra_lateral">
+        <hr class="hrLateral">
+        <ul class="nav nav-pills flex-column">
+          <li class="info_general">
+            <i class="bi bi-envelope-at"></i>
+            <a href="mailto: jeremy.bennett@example.com">jeremy.bennett@example.com</a>
+          </li>
+          <li class="info_general">
+            <i class="bi bi-telephone"></i>
+            (407) 912-8188
+          </li>
+          <li class="info_general">
+            <i class="bi bi-geo-alt"></i>
+            8181 W 6th St
+          </li>
+          <li class="info_general">
+            <i class="bi bi-calendar3"></i>
+            6/7/1990
+          </li>
+        </ul>
+        <hr class="hrLateral">
+        <ul class="list-unstyled">
+          <li class="mb-1 info_general_dd">
+            <button id="botonIdiomas" class="btn btn-toggle d-inline-flex align-items-center rounded border-0 info_general_dd" data-bs-toggle="collapse" data-bs-target="#idiomas-collapse" aria-expanded="true">
+              <i id="chevronIdiomas" class="bi bi-chevron-right"></i>
+              <strong>Idiomas</strong>
+            </button>
+            <div class="collapse" id="idiomas-collapse">
+              <ul class="info_general_dd_interior">
+                <li>Inglés C2;</li>
+                <li>Francés B1.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="mb-1 info_general_dd">
+            <button id="botonAptitudes" class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed info_general_dd" data-bs-toggle="collapse" data-bs-target="#aptitudes-collapse" aria-expanded="false">
+              <i id="chevronAptitudes" class="bi bi-chevron-right"></i>
+              <strong>Aptitudes</strong>
+            </button>
+            <div class="collapse" id="aptitudes-collapse">
+              <ul class="info_general_dd_interior">
+                <li>Trabajo en equipo;</li>
+                <li>Resolución de problemas;</li>
+                <li>Aprendizaje rápido y fluido;</li>
+                <li>Comunicación eficiente.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="mb-1 info_general_dd">
+            <button id="botonHabilidades" class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed info_general_dd" data-bs-toggle="collapse" data-bs-target="#habilidades-collapse" aria-expanded="false">
+              <i id="chevronHabilidades" class="bi bi-chevron-right"></i>
+              <strong>Habilidades informáticas</strong>
+            </button>
+            <div class="collapse" id="habilidades-collapse">
+              <ul class="info_general_dd_interior">
+                <li>Programación en C/C++, C#, HTML, CSS, Javascript;</li>
+                <li>Conocimientos avanzados de Prestashop, Git;</li>
+                <li>Desarrollo de apps para móviles.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="mb-1 info_general_dd">
+            <button id="botonCertificados" class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed info_general_dd" data-bs-toggle="collapse" data-bs-target="#certificados-collapse" aria-expanded="false">
+              <i id="chevronCertificados" class="bi bi-chevron-right"></i>
+              <strong>Certificados</strong>
+            </button>
+            <div class="collapse" id="certificados-collapse">
+              <ul class="info_general_dd_interior">
+                <li>Programación avanzada en C++ (240 horas) - Edx;</li>
+                <li>Programación avanzada en Javascript (200 horas) - Edx;</li>
+                <li>Adobe Illustrator para diseño gráfico (140 horas) - Domestika.</li>
+              </ul>
+            </div>
+          </li>
+          <script src="javascript.js"></script>
+        </ul>
+      </div>
+      <div class="col p-4 principal">
+        <h3 class="text-decoration-underline"><strong>Resumen profesional</strong></h3>
+        <p>
+          Programador web con más de 8 años de trayectoria, principalmente en e-Commerce. 
+          En estos años, he formado parte de los equipos responsables de la creación de páginas como attraction.example.com y bridge.example.com,
+          de considerable éxito en cuanto a tráfico.
+          Busco formar parte de su compañia - Sistemas RTT - para continuar llevando adelante mis capacidades,
+          aportando mis amplios conocimientos sobre desarrollo web y demás.
+        </p>
+        <hr>
+        <h3 class="text-decoration-underline"><strong>Historial laboral</strong></h3>
+        <p>
+          <strong>Desarrollador web</strong> - <a href="https://www.globant.com/">Globant</a>, Buenos Aires (Febrero 2021 - Enero 2023)
+        </p>
+        <ul>
+          <li>Programación con JavaScript, C++;</li>
+          <li>SEO;</li>
+          <li>Maquetación con CSS;</li>
+          <li>Diseño de bases de datos.</li>
+        </ul>
+        <p>
+          <strong>Desarrollador web</strong> - <a href="https://nimblegiant.com/">Nimble Giant</a>, Buenos Aires (Junio 2019 - Febrero 2021)
+        </p>
+        <ul>
+          <li>Diseño y desarrollo del sitio web;</li>
+          <li>Diseño, desarrollo e implementación de bases de datos;</li>
+          <li>Elaboración de diseños gráficos.</li>
+        </ul>
+        <hr>
+        <h3 class="text-decoration-underline"><strong>Formación</strong></h3>
+        <h5>2012</h5>
+        <p>
+          <strong>Grado Superior en Desarrollo de Aplicaciones Web</strong><br>
+          Universidad Nacional de Buenos Aires
+        </p>
+        <h5>2010</h5>
+        <p>
+          <strong>Bachillerato de Ciencias</strong><br>
+          IES San Martín
+        </p>
+      </div>
+    </div>  
+  </div>
+</body>
+</html>

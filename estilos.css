@@ -1,0 +1,104 @@
+* {
+  font-family: 'Playfair Display', serif;
+
+}
+
+.fondoFoto {
+  background-color: #00354f;
+}
+
+.botonFoto {
+  border-radius: 50%;
+  border-color: #225975;
+  background-color: #00354f;
+}
+
+.botonFoto:hover {
+  border-color: #225975;
+  background-color: #225975;
+}
+
+.fotoCarnet {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+}
+
+.fotoCarnetModal {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+.modalContentFotoCarnet {
+  background-color: #00354f;
+  color: white;
+}
+
+.barra_lateral {
+  background-color: #00293d;
+}
+
+.hrLateral {
+  color: lightgray;
+}
+
+.info_general {
+  color: lightgray;
+  font-size: 1.3vw;
+  text-align: left;
+}
+
+.info_general_dd {
+  color: lightgray;
+  font-size: 1.6vw;
+  text-align: left;
+}
+
+.info_general_dd_interior {
+  color: lightgray;
+  font-size: 1.3vw;
+  text-align: left;
+}
+
+@media (max-width: 992px) {
+  .info_general {
+    font-size: 3.25vw;
+  }
+  
+  .info_general_dd {
+    font-size: 4vw;
+  }
+  
+  .info_general_dd_interior {
+    font-size: 3.25vw;
+  }
+}
+
+.barra_superior {
+  background-color: #28424f;
+  display: flex;
+}
+
+.nombre {
+  color: white;
+  font-size: 6vw;
+  font-weight: bolder;
+  font-style: italic;
+  text-align: left;
+  align-self: flex-end;
+}
+
+.profesion {
+  color: white;
+  font-size: 3vw;
+  text-align: right;
+  align-self: flex-end;
+}
+
+.principal {
+  text-align: left;
+}
